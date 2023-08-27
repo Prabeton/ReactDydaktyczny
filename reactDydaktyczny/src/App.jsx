@@ -1,12 +1,20 @@
+import React from 'react'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import avatarPrabeton from './assets/avatarPrabeton.png'
 import tagProfil from './assets/tagProfil.svg'
 import './App.css'
+import Button from './components/Button'
+import Outcome from './components/Outcome'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  
+  const countUp = () => {
+    setCount(count + 1);
+  };
+  const countDown = () => {
+    setCount(count - 1);
+  };
 
   return (
     <>
@@ -20,15 +28,17 @@ function App() {
       </div>
       <h1>Przemek + Button = Prabeton</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <Button inscription="Odejmij klik" onClick={countDown}/>
+        <Outcome count={count}/>
+        <Button inscription="Dodaj klik" onClick={countUp}/>
+      </div>
+      <div>
         <p>
           Edytuj <code>ile chcesz</code> a zostaniesz Edytą
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the orange tagProfil to view GitHub
+        Click on the <span id="orange">orange tagProfil</span> to view GitHub
       </p>
     </>
   )

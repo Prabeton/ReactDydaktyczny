@@ -34,9 +34,15 @@
 }
 
 .card {
+  display: flex;
+  justify-content: center;
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+#orange {
+  color:orange;
 }
