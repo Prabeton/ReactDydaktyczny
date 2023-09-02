@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import avatarPrabeton from './assets/avatarPrabeton.png'
 import tagProfil from './assets/tagProfil.svg'
@@ -19,7 +18,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://github.com/Prabeton/ReactDydaktyczny.git" target="_blank">
+        <a href="https://github.com/Prabeton/ReactDydaktyczny.git" target="_blank" rel="noreferrer">
           <img src={tagProfil} className="logo" alt="Vite logo" />
         </a>
         <a>

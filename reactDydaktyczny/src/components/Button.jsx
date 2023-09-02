@@ -1,7 +1,7 @@
-import React from 'react';
 import styles from './Button.module.css';
 
-const Button = ( { inscription, onClick } ) => {
+// eslint-disable-next-line react/prop-types
+const Button = ( {inscription, onClick} ) => {
 	
 	return (
 		<button className={styles.button} onClick={onClick}>{inscription}</button>

@@ -1,7 +1,7 @@
-import React from 'react';
 import styles from './Outcome.module.css';
 
-const Outcome = ({ count }) => {
+// eslint-disable-next-line react/prop-types
+const Outcome = ( { count } ) => {
 	return(
 		<div className={styles.counter}>{count}</div>
 	);
